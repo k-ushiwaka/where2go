@@ -1,6 +1,6 @@
 ﻿class LunchController < ApplicationController
 	def go
-	cafes = cafe.all
-	@recommend = cafes.sample
+	cafes = Cafe.all
+	@recommend = cafes.sample.name
 	end
 end
